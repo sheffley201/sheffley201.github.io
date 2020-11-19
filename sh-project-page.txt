@@ -1,0 +1,8 @@
+Square Hunt Project Page:
+
+Nav bar
+(Picture of me) Spencer Heffley
+(Picture of Project)
+Title: Square Hunt
+About: A spoof of the Retro Game "Duck Hunt" This is a game I made in High School while I was learning Java. Different modes of difficulty, two squares to shoot down, and 5 shots. Plus the dog (brown rectangle) pops up after the squares are shot or fly away. This is the first program I made that I was truly proud of, and paved the way for my love for programming
+Link to game (playable in browser?)

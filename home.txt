@@ -1,0 +1,7 @@
+Home Page:
+
+Nav Bar: Home(highlighted), Projects(Drop Down Menu), Resume
+Header: (Picture of me) Spencer Heffley
+About: Problem solver, maker of things I'm proud of, with Experience in Java, JavaScript, HTML and CSS.
+Projects: Tic-Tac-Toe, DOM Adventure Game, Square Hunt (Java), add more as I do more Projects
+Social Medias: Facebook, instagram, twitter(which I never use) LinkedIn(?)

@@ -1,0 +1,7 @@
+DOM Adventure Game Project Page:
+
+Nav bar
+(Picture of me) Spencer Heffley
+(Picture of Project)
+Title: DOM Adventure game
+About: My first project practicing with Manipulating the Document Object Model in JavaScript. All elements were created in JavaScript instead of initializing them in the HTML. The text content and styling to hide buttons takes care of the rest. Click and key press event listeners are used throughout.

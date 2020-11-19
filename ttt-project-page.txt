@@ -1,0 +1,8 @@
+Tic-Tac-Toe Project Page:
+
+Nav Bar: Same as home page, with projects section highlighted
+(Picture of me)Spencer Heffley
+(Picture of project)
+Title: Tic-Tac-Toe
+About: An (almost) fully featured tic-tac-toe game. 3 game modes, 1 player against a (for now) basic Computer Player, two human players (or play against yourself if that's what you're into), and lastly a CPU v CPU mode where you can watch two CPU players battle it out. Made in HTML, CSS and JavaScript.
+Link to project
