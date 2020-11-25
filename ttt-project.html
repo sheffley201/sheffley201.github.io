@@ -4,15 +4,17 @@
     <meta charset="utf-8">
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <link rel='stylesheet' href='styles.css' type='text/css' />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Spencer Heffley</title>
   </head>
   <body>
     <header>
       <nav>
-        <ul>
+        <ul class='menu'>
           <li><a href='index.html'>Home</a></li>
-          <li>Projects
-            <ul>
+          <li class='dropdown'><span>Projects</span>
+            <ul class='projects-menu'>
               <li><a href='dag-project.html'>DOM Adventure Game</a></li>
               <li><a href='ttt-project.html'>Tic-Tac-Toe</a></li>
               <li><a href='sh-project.html'>Square Hunt</a></li>
@@ -34,5 +36,23 @@
       <p>An (almost) fully featured tic-tac-toe game. 3 game modes, 1 player against a (for now) basic Computer Player, two human players (or play against yourself if that's what you're into), and lastly a CPU v CPU mode where you can watch two CPU players battle it out. Made in HTML, CSS and JavaScript.</p>
       <p><a href='https://sheffley201.github.io/personal-ttt/'>See for yourself!</a></p>
     </article>
+
+    <footer>
+      <address>
+        <span>Email: <a href='mailto:spheffley@yahoo.com'>spheffley@yahoo.com</a></span> <span>Phone: <a href='tel:+17176154467'>+1 (717) 615-4467</a></span>
+      </address>
+      <div class='socials'>
+        <h3>Social Medias:</h3>
+        <ul class='social-media'>
+          <li><a href='#'><img class='logo' src='assets/facebook.svg' alt='facebook logo' /></a></li>
+          <li><a href='#'><img class='logo' src='assets/instagram-logo.svg' alt='instagram-logo' /></a></li>
+          <li><a href='#'><img class='logo' src='assets/twitter.svg' alt='twitter logo' /></a></li>
+          <li><a href='#'><img class='logo' src='assets/linkedin.svg' alt='linkedin logo' /></a></li>
+        </ul>
+        <div class='sources'>
+          <div class='credits'>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><div class='credits'>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
