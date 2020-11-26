@@ -92,6 +92,26 @@ p {
   border-radius: 50%;
 }
 
+.me-project {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.name-picture {
+  display: flex;
+  align-items: center;
+  position: absolute;
+}
+
+.name-picture h1 {
+  font-size: 1.2em;
+}
+
+.banner {
+  width: 100vw;
+  border-radius: 0 0 50% 50%;
+}
+
 main {
   margin-top: 50px;
   display: flex;
@@ -100,10 +120,35 @@ main {
   height: 600px;
 }
 
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 600px;
+}
+
+article p:first-of-type {
+  text-align: left;
+  width: 350px;
+}
+
+.game-link,
+.game-link:visited {
+  background-color: #cb9315;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
 .thumbnail {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+}
+
+.resume {
+  height: auto;
 }
 
 footer {
@@ -111,6 +156,7 @@ footer {
   justify-content: center;
   align-items: flex-start;
   height: auto;
+  margin-top: 70px;
 }
 
 address span:first-of-type {
