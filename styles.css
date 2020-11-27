@@ -181,6 +181,7 @@ article p:first-of-type {
   height: auto;
   text-align: left;
   margin: 0 1em;
+  max-width: 700px;
 }
 
 .resume section {
@@ -261,13 +262,12 @@ address span:first-of-type {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .name-about {
     text-align: left;
   }
-  .name-about h1 {
+  .img-info h1 {
     font-size: 3rem;
   }
+  .img
   .projects h2 {
     font-size: 2rem;
   }
@@ -291,6 +291,9 @@ address span:first-of-type {
   .game-link,
   .game-link:visited {
     font-size: 1.3em;
+  }
+  .resume {
+    margin: 0 auto;
   }
   footer {
     flex-direction: row;

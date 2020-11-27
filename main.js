@@ -8,7 +8,7 @@ let clickedProject;
 
 //create a function to animate the picture getting larger
 const picEnlarge = function() {
-  if (currentSize < 2000) {
+  if (currentSize < 5000) {
     currentSize += 500;
     projects[clickedProject].style.width = currentSize + 'px';
     projects[clickedProject].style.height = currentSize + 'px';
