@@ -116,12 +116,36 @@ p {
   border-radius: 0 0 50% 50%;
 }
 
+header p {
+  text-align: left;
+  width: 300px;
+  margin: 10px auto;
+}
+
 main {
-  margin-top: 50px;
+  margin: 50px auto 0 auto;
+  max-width: 800px;
+}
+
+.projects {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   height: 600px;
+}
+
+.about-me {
+  margin: 30px;
+}
+
+.about-me h2 {
+  margin-bottom: 10px;
+}
+
+.about-me p {
+  text-align: left;
+  margin: 30px auto;
+  max-width: 450px;
 }
 
 article {
@@ -129,7 +153,7 @@ article {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 600px;
+  height: auto;
 }
 
 article p:first-of-type {
@@ -149,6 +173,7 @@ article p:first-of-type {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  position: relative;
 }
 
 .resume {
@@ -205,4 +230,76 @@ address span:first-of-type {
 
 .credits {
   font-size: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+  .projects {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+  main h2 {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  main a {
+    width: 33%;
+  }
+  figcaption {
+    text-align: center;
+  }
+  footer {
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .img-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .name-about {
+    text-align: left;
+  }
+  .name-about h1 {
+    font-size: 3rem;
+  }
+  .projects h2 {
+    font-size: 2rem;
+  }
+  .me-project {
+    width: 100px
+  }
+  .name-picture h1 {
+    font-size: 2.5rem;
+  }
+  .about-me h2 {
+    font-size: 2.5rem;
+  }
+  article p:first-of-type {
+    width: 450px;
+    margin-bottom: 40px;
+    font-size: 1.3em;
+  }
+  article h2 {
+    font-size: 3em;
+  }
+  .game-link,
+  .game-link:visited {
+    font-size: 1.3em;
+  }
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  address {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
 }

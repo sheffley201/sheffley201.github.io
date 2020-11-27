@@ -23,32 +23,41 @@
           <li><a href='resume.html'>Resume</a></li>
         </ul>
       </nav>
-
-      <img class='me' src='assets/me.png' alt='Picture of me' />
-      <h1>Spencer Heffley</h1>
-      <p>Problem solver, maker of things I'm proud of, with Experience in JavaScript, HTML, CSS, and Java.</p>
+      <div class='img-info'>
+        <img class='me' src='assets/me.png' alt='Picture of me' />
+        <div class='name-about'>
+          <h1>Spencer Heffley</h1>
+          <p>Problem solver, maker of things I'm proud of, with Experience in JavaScript, HTML, CSS, and Java.</p>
+        </div>
+      </div>
     </header>
 
     <main>
-      <h2>Projects</h2>
-      <a href='dag-project.html'>
-        <figure>
-          <img class='thumbnail' src='assets/dag-thumbnail.png' alt='Picture of my DOM Adventure Game' />
-          <figcaption>DOM Adventure Game</figcaption>
-        </figure>
-      </a>
-      <a href='ttt-project.html'>
-        <figure>
-          <img class='thumbnail' src='assets/ttt-thumbnail.png' alt='Picture of my Tic-Tac-Toe Game' />
-          <figcaption>Tic-Tac-Toe</figcaption>
-        </figure>
-      </a>
-      <a href='sh-project.html'>
-        <figure>
-          <img class='thumbnail' src='assets/squarehunt-thumbnail.png' alt='Picture of my Square Hunt Game' />
-          <figcaption>Square Hunt</figcaption>
-        </figure>
-      </a>
+      <section class='projects'>
+        <h2>Projects</h2>
+        <a href='dag-project.html'>
+          <figure>
+            <img id='0' class='thumbnail' src='assets/dag-thumbnail.png' alt='Picture of my DOM Adventure Game' />
+            <figcaption>DOM Adventure Game</figcaption>
+          </figure>
+        </a>
+        <a href='ttt-project.html'>
+          <figure>
+            <img id='1' class='thumbnail' src='assets/ttt-thumbnail.png' alt='Picture of my Tic-Tac-Toe Game' />
+            <figcaption>Tic-Tac-Toe</figcaption>
+          </figure>
+        </a>
+        <a href='sh-project.html'>
+          <figure>
+            <img id='2' class='thumbnail' src='assets/squarehunt-thumbnail.png' alt='Picture of my Square Hunt Game' />
+            <figcaption>Square Hunt</figcaption>
+          </figure>
+        </a>
+      </section>
+      <section class='about-me'>
+        <h2>About me</h2>
+        <p>I first learned programming in 11th grade when I signed up for a class about programming in Java. I discovered a love for making things through coding and the problem solving that came with it. Seriously, I can't sleep until I figure out how to fix something. Now, 5 years later, I've rediscovered my love for programming and I am now a freshman at Thaddeus Stevens, trying to make my dream become a reality.</p>
+      </section>
     </main>
 
     <footer>
@@ -68,5 +77,6 @@
         </div>
       </div>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
