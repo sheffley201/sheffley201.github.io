@@ -156,9 +156,14 @@ article {
   height: auto;
 }
 
+article h2 {
+  margin-top: 50px;
+}
+
 article p:first-of-type {
   text-align: left;
   width: 350px;
+  margin-bottom: 50px;
 }
 
 .game-link,
@@ -204,8 +209,10 @@ footer {
   margin-top: 70px;
 }
 
-address span:first-of-type {
-  margin-right: 10px;
+address {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
 .socials {
@@ -299,10 +306,5 @@ address span:first-of-type {
     flex-direction: row;
     justify-content: space-between;
     padding: 0 20px;
-  }
-  address {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
   }
 }
