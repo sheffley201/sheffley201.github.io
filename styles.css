@@ -213,7 +213,7 @@ video {
 
 video ~ p {
   text-align: left;
-  width: 600px;
+  max-width: 600px;
   margin: 10px auto;
 }
 
