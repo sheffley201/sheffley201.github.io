@@ -5,7 +5,7 @@
 }
 
 html {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   background-color: #2e2e2e;
   color: #bfbfbf;
   text-align: center;
@@ -75,8 +75,8 @@ li {
   cursor: pointer;
 }
 
-span[class='selected'],
-a[class='selected'] {
+span[class="selected"],
+a[class="selected"] {
   color: #ffffbf;
   text-shadow: 0 0 10px #ddddbf;
 }
@@ -85,7 +85,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: normal;
 }
 
@@ -200,7 +200,7 @@ article h2 {
 }
 
 .resume p {
-  font-size:
+  font-size: ;
 }
 
 section h3 {
@@ -256,7 +256,8 @@ address {
 
 .logo {
   width: 35px;
-  filter: invert(98%) sepia(0%) saturate(445%) hue-rotate(143deg) brightness(84%) contrast(77%);
+  filter: invert(98%) sepia(0%) saturate(445%) hue-rotate(143deg)
+    brightness(84%) contrast(77%);
 }
 
 .credits {
@@ -297,12 +298,11 @@ address {
   .img-info h1 {
     font-size: 3rem;
   }
-  .img
-  .projects h2 {
+  .img .projects h2 {
     font-size: 2rem;
   }
   .me-project {
-    width: 100px
+    width: 100px;
   }
   .name-picture h1 {
     font-size: 2.5rem;
