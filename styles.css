@@ -43,7 +43,7 @@ li {
 .dropdown:hover .projects-menu {
   display: flex;
   flex-direction: column;
-  background: #21203a;
+  background: #111;
   border-radius: 10px;
   padding-top: 60px;
 
