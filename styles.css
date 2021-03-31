@@ -117,6 +117,10 @@ p {
   color: #333;
 }
 
+.snake-page-name {
+  background-color: black;
+}
+
 .banner {
   width: 100vw;
   border-radius: 0 0 50% 50%;
