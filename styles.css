@@ -20,7 +20,7 @@ a:visited {
 nav,
 footer {
   background-color: #191919;
-  height: 50px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -235,7 +235,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  height: auto;
+  height: 70px;
   margin-top: 70px;
 }
 
