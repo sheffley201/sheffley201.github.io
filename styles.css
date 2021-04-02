@@ -235,7 +235,8 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  height: 70px;
+  height: auto;
+  padding: 10px;
   margin-top: 70px;
 }
 
@@ -300,6 +301,7 @@ address {
   }
   footer {
     align-items: center;
+    height: auto;
   }
 }
 @media only screen and (min-width: 800px) {
@@ -343,5 +345,6 @@ address {
     flex-direction: row;
     justify-content: space-between;
     padding: 0 20px;
+    height: 70px;
   }
 }
