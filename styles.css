@@ -76,7 +76,9 @@ li {
 }
 
 span[class="selected"],
-a[class="selected"] {
+a[class="selected"],
+li a:hover,
+li span:hover {
   color: #ffffbf;
   text-shadow: 0 0 10px #ddddbf;
 }
