@@ -33,6 +33,8 @@ const picEnlarge = function() {
       location.assign('sh-project.html');
     } else if (clickedProject == 3) {
       location.assign('snake-project.html');
+    } else if (clickedProject == 4) {
+      location.assign('retrogames-project.html');
     }
   }
 }

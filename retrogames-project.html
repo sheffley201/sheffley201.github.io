@@ -15,104 +15,46 @@
     <header>
       <nav>
         <ul class="menu">
-          <li><a class="selected" href="index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li class="dropdown">
-            <span>Projects</span>
+            <span class="selected">Projects</span>
             <ul class="projects-menu">
-              <li><a href="dag-project.html">DOM Adventure Game</a></li>
+              <li>
+                <a href="dag-project.html"
+                  >DOM Adventure Game</a
+                >
+              </li>
               <li><a href="ttt-project.html">Tic-Tac-Toe</a></li>
               <li><a href="sh-project.html">Square Hunt</a></li>
               <li><a href="snake-project.html">Snake</a></li>
-              <li><a href="retrogames-project.html">Retro Games Collection</a></li>
+              <li><a class="selected" href="retrogames-project.html">Retro Games Collection</a></li>
             </ul>
           </li>
           <li><a href="resume.html">Resume</a></li>
         </ul>
       </nav>
-      <div class="img-info">
-        <img class="me" src="assets/me.png" alt="Picture of me" />
-        <div class="name-about">
-          <h1>Spencer Heffley</h1>
-          <p>
-            Problem solver, maker of things I'm proud of, with Experience in
-            JavaScript, HTML, CSS, Python, and Java.
-          </p>
-        </div>
+      <div class="name-picture">
+        <img class="me-project" src="assets/me.png" alt="Picture of me" />
+        <h1 class="light-background">Spencer Heffley</h1>
       </div>
     </header>
 
-    <main>
-      <section class="projects">
-        <h2>Projects</h2>
-        <a href="dag-project.html">
-          <figure>
-            <img
-              id="0"
-              class="thumbnail"
-              src="assets/dag-thumbnail.png"
-              alt="Picture of my DOM Adventure Game"
-            />
-            <figcaption>DOM Adventure Game</figcaption>
-          </figure>
-        </a>
-        <a href="ttt-project.html">
-          <figure>
-            <img
-              id="1"
-              class="thumbnail"
-              src="assets/ttt-thumbnail.png"
-              alt="Picture of my Tic-Tac-Toe Game"
-            />
-            <figcaption>Tic-Tac-Toe</figcaption>
-          </figure>
-        </a>
-        <a href="sh-project.html">
-          <figure>
-            <img
-              id="2"
-              class="thumbnail"
-              src="assets/squarehunt-thumbnail.png"
-              alt="Picture of my Square Hunt Game"
-            />
-            <figcaption>Square Hunt</figcaption>
-          </figure>
-        </a>
-        <a href="snake-project.html">
-          <figure>
-            <img
-              id="3"
-              class="thumbnail"
-              src="assets/snake-thumbnail.png"
-              alt="Picture of my Snake Game"
-            />
-            <figcaption>Snake</figcaption>
-          </figure>
-        </a>
-        <a href="retrogames-project.html">
-          <figure>
-            <img
-              id="4"
-              class="thumbnail"
-              src="assets/rgc-thumbnail.png"
-              alt="Picture of my Snake Game"
-            />
-            <figcaption>Retro Games Collection</figcaption>
-          </figure>
-        </a>
-      </section>
-      <section class="about-me">
-        <h2>About me</h2>
-        <p>
-          I first learned programming in 11th grade when I signed up for a class
-          about programming in Java. I discovered a love for making things
-          through coding and the problem solving that came with it. Seriously, I
-          can't sleep until I figure out how to fix something. Now, 5 years
-          later, I've rediscovered my love for programming and I am now a
-          freshman at Thaddeus Stevens, trying to make my dream become a
-          reality.
-        </p>
-      </section>
-    </main>
+    <article class="project-info">
+      <header>
+        <img class="banner" src="assets/rgc-banner.png" />
+      </header>
+      <h2>Retro Games Collection</h2>
+      <p>
+        This project I developed with 3 other students in my class. It consists of 4 classic games, each one saves the global high score in a database. In order to play, you need to create an account that is also stored in the database. I took on 3 of the games and the high score page, while my partners worked on the last game, the home page, and the back-end parts.
+      </p>
+      <p>
+        <a
+          class="game-link"
+          href="https://retro-game-collection.herokuapp.com/"
+          >See for yourself!</a
+        >
+      </p>
+    </article>
 
     <footer>
       <address>
@@ -175,6 +117,5 @@
         </div>
       </div>
     </footer>
-    <script src="main.js"></script>
   </body>
 </html>
