@@ -1,180 +1,377 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" type="text/css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
+    
+    <!--jQuery CDN-->
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+
+    <!--Bootstrap CDNs-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!--My styling and JS-->
+    <link rel="stylesheet" href="styles.css" />
+    <script src='main.js'></script>
     <title>Spencer Heffley</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul class="menu">
-          <li><a class="selected" href="index.html">Home</a></li>
-          <li class="dropdown">
-            <span>Projects</span>
-            <ul class="projects-menu">
-              <li><a href="dag-project.html">DOM Adventure Game</a></li>
-              <li><a href="ttt-project.html">Tic-Tac-Toe</a></li>
-              <li><a href="sh-project.html">Square Hunt</a></li>
-              <li><a href="snake-project.html">Snake</a></li>
-              <li><a href="retrogames-project.html">Retro Games Collection</a></li>
-            </ul>
-          </li>
-          <li><a href="resume.html">Resume</a></li>
-        </ul>
-      </nav>
-      <div class="img-info">
-        <img class="me" src="assets/me.png" alt="Picture of me" />
-        <div class="name-about">
-          <h1>Spencer Heffley</h1>
-          <p>
-            Problem solver, maker of things I'm proud of, with Experience in
-            JavaScript, HTML, CSS, Python, and Java.
-          </p>
+</head>
+<body>
+    <!--DOM Adventure Game Hunt Sidebar-->
+    <div class="offcanvas offcanvas-start" id="dag-sidebar">
+        <div class="offcanvas-header">
+            <h1 class="offcanvas-title">DOM Adventure Game</h1>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
         </div>
-      </div>
-    </header>
-
-    <main>
-      <section class="projects">
-        <h2>Projects</h2>
-        <a href="dag-project.html">
-          <figure>
-            <img
-              id="0"
-              class="thumbnail"
-              src="assets/dag-thumbnail.png"
-              alt="Picture of my DOM Adventure Game"
-            />
-            <figcaption>DOM Adventure Game</figcaption>
-          </figure>
-        </a>
-        <a href="ttt-project.html">
-          <figure>
-            <img
-              id="1"
-              class="thumbnail"
-              src="assets/ttt-thumbnail.png"
-              alt="Picture of my Tic-Tac-Toe Game"
-            />
-            <figcaption>Tic-Tac-Toe</figcaption>
-          </figure>
-        </a>
-        <a href="sh-project.html">
-          <figure>
-            <img
-              id="2"
-              class="thumbnail"
-              src="assets/squarehunt-thumbnail.png"
-              alt="Picture of my Square Hunt Game"
-            />
-            <figcaption>Square Hunt</figcaption>
-          </figure>
-        </a>
-        <a href="snake-project.html">
-          <figure>
-            <img
-              id="3"
-              class="thumbnail"
-              src="assets/snake-thumbnail.png"
-              alt="Picture of my Snake Game"
-            />
-            <figcaption>Snake</figcaption>
-          </figure>
-        </a>
-        <a href="retrogames-project.html">
-          <figure>
-            <img
-              id="4"
-              class="thumbnail"
-              src="assets/rgc-thumbnail.png"
-              alt="Picture of my Snake Game"
-            />
-            <figcaption>Retro Games Collection</figcaption>
-          </figure>
-        </a>
-      </section>
-      <section class="about-me">
-        <h2>About me</h2>
-        <p>
-          I first learned programming in 11th grade when I signed up for a class
-          about programming in Java. I discovered a love for making things
-          through coding and the problem solving that came with it. Seriously, I
-          can't sleep until I figure out how to fix something. Now, 5 years
-          later, I've rediscovered my love for programming and I am now a
-          freshman at Thaddeus Stevens, trying to make my dream become a
-          reality.
-        </p>
-      </section>
-    </main>
-
-    <footer>
-      <address>
-        <span
-          >Email:
-          <a href="mailto:spheffley@yahoo.com">spheffley@yahoo.com</a></span
-        >
-        <span>Phone: <a href="tel:+17176154467">+1 (717) 615-4467</a></span>
-      </address>
-      <div class="socials">
-        <h3>Social Medias:</h3>
-        <ul class="social-media">
-          <li>
-            <a href="https://www.facebook.com/spheffley/"
-              ><img class="logo" src="assets/facebook.svg" alt="facebook logo"
-            /></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/spheffley/"
-              ><img
-                class="logo"
-                src="assets/instagram-logo.svg"
-                alt="instagram-logo"
-            /></a>
-          </li>
-          <li>
-            <a href="https://twitter.com/spheffley"
-              ><img class="logo" src="assets/twitter.svg" alt="twitter logo"
-            /></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/spencer-heffley-4593381b9/"
-              ><img class="logo" src="assets/linkedin.svg" alt="linkedin logo"
-            /></a>
-          </li>
-        </ul>
-        <div class="sources">
-          <div class="credits">
-            Icons made by
-            <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
-              >Freepik</a
-            >
-            from
-            <a href="https://www.flaticon.com/" title="Flaticon"
-              >www.flaticon.com</a
-            >
-          </div>
-          <div class="credits">
-            Icons made by
-            <a
-              href="https://www.flaticon.com/authors/pixel-perfect"
-              title="Pixel perfect"
-              >Pixel perfect</a
-            >
-            from
-            <a href="https://www.flaticon.com/" title="Flaticon"
-              >www.flaticon.com</a
-            >
-          </div>
+        <div class="offcanvas-body">
+            <img class='banner' src="assets/dag-banner.png" alt="picture of my dom adventure game">
+            <p>My first project practicing with manipulating the Document Object Model in JavaScript. All elements were created in JavaScript instead of initializing them in the HTML. The text content and styling to hide buttons takes care of the rest. Click and key press event listeners are used throughout.</p>
+            <button class="btn btn-secondary" type="button" data-bs-toggle="modal" data-bs-target="#dag-modal">See it in action!</button>
         </div>
-      </div>
+    </div>
+
+    <!--Tic-Tac-Toe Hunt Sidebar-->
+    <div class="offcanvas offcanvas-start" id="ttt-sidebar">
+        <div class="offcanvas-header">
+            <h1 class="offcanvas-title">Tic-Tac-Toe</h1>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <img class='banner' src="assets/ttt-banner.png" alt="picture of my Tic-Tac-Toe game">
+            <p>An (almost) fully featured tic-tac-toe game. 3 game modes, 1 player against a (for now) basic Computer Player, two human players (or play against yourself if that's what you're into), and lastly a CPU v CPU mode where you can watch two CPU players battle it out. Made in HTML, CSS and JavaScript.</p>
+            <button class="btn btn-secondary" type="button" data-bs-toggle="modal" data-bs-target="#ttt-modal">See it in action!</button>
+        </div>
+    </div>
+
+    <!--Square Hunt Sidebar-->
+    <div class="offcanvas offcanvas-start" id="square-hunt-sidebar">
+        <div class="offcanvas-header">
+            <h1 class="offcanvas-title">Square Hunt</h1>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <img class='banner' src="assets/squarehunt-banner.png" alt="picture of my square hunt game">
+            <p>A spoof of the Retro Game "Duck Hunt" This is a game I made in High School while I was learning Java. Different modes of difficulty, two squares to shoot down, and 5 shots. Plus the dog (brown rectangle) pops up after the squares are shot or fly away. This is the first program I made that I was truly proud of, and paved the way for my love for programming</p>
+            <button class="btn btn-secondary" type="button" data-bs-toggle="modal" data-bs-target="#squarehunt-modal">See it in action!</button>
+        </div>
+    </div>
+
+    <!--Snake Sidebar-->
+    <div class="offcanvas offcanvas-start" id="snake-sidebar">
+        <div class="offcanvas-header">
+            <h1 class="offcanvas-title">Snake</h1>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <img class='banner' src="assets/snake-banner.png" alt="picture of my snake game">
+            <p>The classic game of Snake. A game a parter and I developed for the final project of our first semester of college. Developed using HTML, CSS, and JavaScript. As well as making use of a Centralized Git Workflow to collaborate.</p>
+            <button class="btn btn-secondary snake-open" type="button" data-bs-toggle="modal" data-bs-target="#snake-modal">See it in action!</button>
+        </div>
+    </div>
+
+    <!--Retro Games Collection Sidebar-->
+    <div class="offcanvas offcanvas-start" id="rgc-sidebar">
+        <div class="offcanvas-header">
+            <h1 class="offcanvas-title">Retro Games Collection</h1>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <img class='banner' src="assets/rgc-banner.png" alt="picture of our retro games collection website" />
+            <p>This project I developed with 3 other students in my class. It consists of 4 classic games, each one saves the global high score in a database. In order to play, you need to create an account that is also stored in the database. I took on 3 of the games and the high score page, while my partners worked on the last game, the home page, and the back-end parts.</p>
+            <form action="https://retro-game-collection.herokuapp.com/">
+                <button class="btn btn-secondary" type="submit" action='https://retro-game-collection.herokuapp.com/'>See it in action!</button>
+            </form>
+        </div>
+    </div>
+
+    <!--Portfolio Website Sidebar-->
+    <div class="offcanvas offcanvas-start" id="portfolio-sidebar">
+        <div class="offcanvas-header">
+            <h1 class="offcanvas-title">Portfolio Website</h1>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <img class='banner' src="assets/portfolio-banner.png" alt="picture of portfolio website" />
+            <p>The website you are on right now is a bootstrap recreation of my old portfolio website I made for a project in my first year of college. This website was made from scratch using HTML, CSS, and JavaScript, and was a lot of fun to build. This is where I really discovered my passion for front-end web development.</p>
+            <button class="btn btn-secondary" type="button" data-bs-toggle="modal" data-bs-target="#portfolio-modal">Visit site</button>
+        </div>
+    </div>
+
+    <!--DOM Adventure Game Modal-->
+    <div class="modal fade" id="dag-modal">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+
+            <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">DOM Adventure Game</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <iframe src="https://sheffley201.github.io/dom-adventure-game/" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Tic-Tac-Toe Modal-->
+    <div class="modal fade" id="ttt-modal">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+
+            <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Tic-Tac-Toe</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <iframe src="https://sheffley201.github.io/personal-ttt/" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Square Hunt Modal-->
+    <div class="modal fade" id="squarehunt-modal">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+
+            <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Square Hunt</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <video src="assets/sh-video.mov" autoplay loop></video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Snake Modal-->
+    <div class="modal fade" id="snake-modal">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+
+            <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Snake</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <iframe class='snake-iframe' src="https://sheffley201.github.io/snake/" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Does not seem to work with iframe-->
+    <!--Retro Games Collection Modal-->
+    <div class="modal fade" id="rgc-modal">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+
+            <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Retro Games Collecion</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <iframe src="https://retro-game-collection.herokuapp.com/" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Portfolio Website Modal-->
+    <div class="modal fade" id="portfolio-modal">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+            <div class="modal-content">
+
+            <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Portfolio Website</h4>
+                    <button type="button" class="btn-close portfolio-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <iframe class='portfolio-iframe' src='https://sheffley201.github.io' frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"
+            ><img
+                style="width: 40px"
+                class="rounded-pill"
+                src="assets/me.png"
+                alt="Picture of me"
+            /></a>
+            <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavbar"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active hvr-grow" href="#">Home</a>
+                    </li>
+                    <!--<li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle hvr-grow"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            >Projects</a
+                        >
+
+                        <!--Dropdown--
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li>
+                                <a class="dropdown-item" href="#" data-bs-toggle="offcanvas" data-bs-target="#dag-sidebar">DOM Adventure Game</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="offcanvas" data-bs-target="#ttt-sidebar">Tic Tac Toe</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="offcanvas" data-bs-target="#square-hunt-sidebar">Square Hunt</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="offcanvas" data-bs-target="#snake-sidebar">Snake</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#" data-bs-toggle="offcanvas" data-bs-target="#rgc-sidebar">Retro Games Collection</a>
+                            </li>
+                        </ul>
+                    </li>-->
+                    <li class="nav-item">
+                        <a class="nav-link hvr-grow" href="#">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Header-->
+    <div class="container p-5 my-1" style="max-width: 700px">
+        <div class='row'>
+            <div class='col-sm-4'>
+                <img src="assets/me.png" alt="picture of me" class='rounded-pill' style='width:100%'>
+            </div>
+            <div class='col-sm-8'>
+                <h1 class="display-4">Spencer Heffley</h1>
+                <p>
+                    Problem solver, maker of things I'm proud of, with Experience in
+                    JavaScript, HTML, CSS, Python, PHP, Swift and Java.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--Project Section-->
+    <div class='container p-5 my-5' style='max-width: 700px'>
+        <h2 class='text-center'>Projects</h2>
+        <div class='container-fluid p-5'>
+            <div class='row'>
+                <div class='col'>
+                    <a data-bs-toggle="offcanvas" data-bs-target="#dag-sidebar">
+                        <figure class='hvr-grow'>
+                            <img class='thumbnail rounded-pill mx-auto d-block' src="assets/dag-thumbnail.png" alt="thumbnail for DOM adventure game">
+                            <figcaption><p class='text-center'>DOM Adventure Game</p></figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div class='col'>
+                    <a data-bs-toggle="offcanvas" data-bs-target="#ttt-sidebar">
+                        <figure class='hvr-grow'>
+                            <img class='thumbnail rounded-pill mx-auto d-block' src="assets/ttt-thumbnail.png" alt="thumbnail for Tic-Tac-Toe">
+                            <figcaption><p class='text-center'>Tic-Tac-Toe</p></figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div class='col'>
+                    <a data-bs-toggle="offcanvas" data-bs-target="#square-hunt-sidebar">
+                        <figure class='hvr-grow'>
+                            <img class='thumbnail rounded-pill mx-auto d-block' src="assets/squarehunt-thumbnail.png" alt="thumbnail for Square Hunt">
+                            <figcaption><p class='text-center'>Square Hunt</p></figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+
+            <div class='row'>
+                <div class='col'>
+                    <a data-bs-toggle="offcanvas" data-bs-target="#snake-sidebar">
+                        <figure class='hvr-grow'>
+                            <img class='thumbnail rounded-pill mx-auto d-block' src="assets/snake-thumbnail.png" alt="thumbnail for snake">
+                            <figcaption><p class='text-center'>Snake</p></figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div class='col'>
+                    <a data-bs-toggle="offcanvas" data-bs-target="#rgc-sidebar">
+                        <figure class='hvr-grow'>
+                            <img class='thumbnail rounded-pill mx-auto d-block' src="assets/rgc-thumbnail.png" alt="thumbnail for retro games collection">
+                            <figcaption><p class='text-center'>Retro Games Collection</p></figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div class='col'>
+                    <a data-bs-toggle="offcanvas" data-bs-target="#portfolio-sidebar">
+                        <figure class='hvr-grow'>
+                            <img class='thumbnail rounded-pill mx-auto d-block' src="assets/portfolio-thumbnail.png" alt="thumbnail for portfolio">
+                            <figcaption><p class='text-center'>Original Portfolio Website</p></figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--About me section-->
+    <div class='container pb-5' style='max-width: 700px;'>
+        <h2 class='text-center'>About me</h2>
+        <p>I first learned programming in 11th grade when I signed up for a class about programming in Java. I discovered a love for making things through coding and the problem solving that came with it. Seriously, I can't sleep until I figure out how to fix something. Now, 5 years later, I've rediscovered my love for programming and I am now a sophmore at Thaddeus Stevens, trying to make my dream become a reality.</p>
+    </div>
+
+    <!--Footer-->
+    <footer class="navbar navbar-expand-sm navbar-dark">
+
+        <div class="container-fluid">
+          <!-- Links -->
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item hvr-grow">
+              <a class="nav-link" href="https://www.facebook.com/spheffley"><img class='logo' src="assets/facebook.svg" alt="facebook logo"></a>
+            </li>
+            <li class="nav-item hvr-grow">
+              <a class="nav-link" href="https://www.instagram.com/spheffley/"><img class='logo' src="assets/instagram-logo.svg" alt="facebook logo"></a>
+            </li>
+            <li class="nav-item hvr-grow">
+              <a class="nav-link" href="https://twitter.com/spheffley"><img class='logo' src="assets/twitter.svg" alt="facebook logo"></a>
+            </li>
+            <li class="nav-item hvr-grow">
+                <a class="nav-link" href="https://www.linkedin.com/in/spheffley/"><img class='logo' src="assets/linkedin.svg" alt="facebook logo"></a>
+            </li>
+          </ul>
+        </div>
+      
     </footer>
-    <script src="main.js"></script>
-  </body>
+</body>
 </html>
